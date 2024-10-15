@@ -1,0 +1,375 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(47, 33, 152);
+}
+
+button:hover{
+    background-color: rgb(40, 83, 143);
+}
+
+.container{
+    background-image: url(img.png);
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{ color:rgb(66, 117, 171); }
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(49, 2, 93);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgb(16, 10, 182);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("img/img.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#Que-hacemos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Que-hacemos .container{
+    padding: 150px 12px;
+}
+
+#Que-hacemos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Que-hacemos p{
+    display: none;
+}
+
+#Que-hacemos .carta{
+    align-items: center;
+    justify-content: center;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgba(47, 118, 218, 0.5),
+        rgba(47, 118, 218, 0.5)
+    )
+    ,url("https://hips.hearstapps.com/hmg-prod/images/piscinas-naturales-bipiscinas-filtrado-depurar-aragrup-teichmeister-5-1628631678.jpeg?crop=1.00xw:0.850xh;0,0.0894xh");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 118, 218, 0.5),
+        rgba(47, 118, 218, 0.5)
+    )
+    ,url("media/full-stack.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(47, 118, 218, 0.5),
+        rgba(47, 118, 218, 0.5)
+    )
+    ,url("media/python.jpg");
+}
+
+#final h2{
+    font-size: 9vw;
+}
+
+#final button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #Que-hacemos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Que-hacemos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Que-hacemos h2{
+        margin-top: 0px;
+    }
+
+    #Que-hacemos .img-container{
+        height: 500px;
+        width: 400px; 
+    }
+
+    #Que-hacemos .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Que-hacemos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Que-hacemos h2{
+        font-size: 4em;
+    }
+
+    #Que-hacemos h3{
+        margin-top: 0;
+    }
+
+    #Que-hacemos .carta{
+        padding: 50px;
+        background-position-y: 0;
+        background-color: rgba(47, 118, 218, 0.5);
+        box-shadow: 2px 2px 10px rgba(47, 118, 218, 0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(47, 118, 218, 0.5),
+            rgba(47, 118, 218, 0.5)
+        )
+        ,url("https://images.ctfassets.net/u7dr43bszaws/go5gBsTSXJQ4qIZW8NY0c/09f7f99a4dbb326a126b0fd88ff03228/piscina-en-casa.webp");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(47, 118, 218, 0.5),
+            rgba(47, 118, 218, 0.5)
+        )
+        ,url("https://hips.hearstapps.com/hmg-prod/images/piscinas-naturales-bipiscinas-filtrado-depurar-aragrup-teichmeister-5-1628631678.jpeg?crop=1.00xw:0.850xh;0,0.0894xh");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(47, 118, 218, 0.5),
+            rgba(47, 118, 218, 0.5)
+        )
+        ,url("https://i0.wp.com/www.piscineria.com/wp-content/uploads/2022/10/Tendencia-en-Piscinas.jpg?fit=1000%2C500&ssl=1");
+
+    }
+
+    #caracteristicas{
+        background-image: url("media/background-2.jpeg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .container{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #final h2{
+        font-size: 5em;
+    }
+
+    #final button{
+        font-size: 2em;
+    }
+
+    footer .container{
+        justify-content: flex-end;
+    }
+}
+
+.pie-pagina{
+    background-color: black;
+    padding-top: 25px;
+}
+.pie-pagina h3::after{
+    content: '.';
+    font-size: 0;
+    width: 90%;
+    height: 1px;
+    background-color: blue;
+    display: block;
+    margin: 15px 0;
+}
+
+.col-pie{
+    width: 25%;
+    float: left;
+}
+.col-pie h3{
+font-size: 13px;
+text-transform: uppercase;
+}
+
+
+.pie-pagina li{
+    font-size: 12px;
+    color: rgb(19, 6, 67);
+    line-height: 1.5;
+}
+
+.copyright{
+    color: #185384;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.social a{
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    line-height: 44px;
+}
+
+.social li{
+    display: inline-block;
+}
+
+.social a:hover{
+    background-color: white;
+    color: rgb(248, 248, 248);
+}
+
+.col-piel li:hover{
+color: white;
+cursor: pointer;
+}
